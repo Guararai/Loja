@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Garagem do Davi e Paulino</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="produtos">
+                <h2>📦 Nossos Produtos</h2>
+                <div class="produto">
+                    <img src="https://img-estoquenow.s3.amazonaws.com/items/7747/galao-gasolina-amarelo_6b4ba9048524795461d6da807003bb24.png" alt="Gasolina">
+                    <h3>Gasolina</h3>
+                    <p>R$ 29,99</p>
+                    <button class="adicionar-carrinho" data-id="1" data-nome="Gasolina" data-preco="29.99">
+                        <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                </div>
+                <div class="produto">
+                    <img src="https://lovatomoveis.com/wp-content/uploads/2023/11/Corda.png" alt="Corda">
+                    <h3>Corda</h3>
+                    <p>R$ 49,99</p>
+                    <button class="adicionar-carrinho" data-id="2" data-nome="Corda" data-preco="49.99">
+                        <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                    </button>
+                </div>
+            </section>
+
+            <section class="carrinho">
+                <h2>🛒 Carrinho de Compras</h2>
+                <ul id="itens-carrinho"></ul>
+                <p>Total: R$ <span id="total">0,00</span></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
